@@ -76,7 +76,7 @@ const Home: NextPage = () => {
 
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-b from-[#2e026d] to-[#15162c]">
         <div className="container flex flex-grow flex-col items-center gap-8 px-4 py-16">
-          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
+          <h1 className="sm:text-[5rem] text-5xl font-extrabold tracking-tight text-white">
             WPRS <span className="text-[hsl(125,50%,56%)]">Forecast</span>{" "}
             <span className="block text-right text-sm tracking-normal sm:inline sm:text-left">
               beta
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                     <input
                       type="text"
                       value={url}
-                      className="h-12 w-full items-center space-x-3 rounded-lg border border-gray-300 bg-white px-4 text-left text-slate-600 shadow-sm  ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2 focus:ring-[hsl(125,50%,56%)]"
+                      className="focus:ring-[hsl(125,50%,56%)] h-12 w-full items-center space-x-3 rounded-lg border border-gray-300 bg-white px-4 text-left text-slate-600  shadow-sm ring-1 ring-slate-900/10 hover:ring-slate-300 focus:outline-none focus:ring-2"
                       onChange={onUrlChange}
                       placeholder="Link to comp (CIVL, PWC, Airtribune or Swissleague)"
                     />
@@ -158,7 +158,7 @@ const Home: NextPage = () => {
                 </div>
 
                 <button
-                  className="rounded-full px-0.5 py-0.5 text-white hover:bg-[hsl(125,50%,56%)] focus:bg-gray-400 focus:outline-none"
+                  className="hover:bg-[hsl(125,50%,56%)] rounded-full px-0.5 py-0.5 text-white focus:bg-gray-400 focus:outline-none"
                   type="button"
                   onClick={resetCompData}
                 >

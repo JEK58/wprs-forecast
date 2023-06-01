@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Rubberband effect color fix for overscroll */
+html {
+    background: linear-gradient(to bottom, #15162c, #2e026d);
+}
+
+/* body {
+    background: linear-gradient(to bottom, #2e026d, #15162c);
+} */

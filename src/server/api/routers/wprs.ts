@@ -19,6 +19,7 @@ export const wprsRouter = createTRPCRouter({
       return await calcWprs(input.url);
     }),
   getStats: publicProcedure.query(({ ctx }) => {
+    // TODO: Handle no return case
     return ctx.prisma.usage.findMany();
   }),
 });
